@@ -1,0 +1,508 @@
+.primeContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .primeContainer {
+        max-width: 1280px;
+    }
+
+    .secondsection .right p::after {
+        content: "I'm actively seeking opportunities in the world of frontend development and programming";
+    }
+    .firstsection .leftsection p{
+        width: 90%;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .primeContainer {
+        max-width: 1024px;
+    }
+    .firstsection .leftsection p{
+        width: 100%;
+    }
+    /* work experience */
+    .exp1 {
+        width: 85%;
+    }
+
+    .project1,
+    .project2 {
+        width: 95%;
+        align-items: center;
+    }
+
+    .project-box {
+        flex: 1.5;
+        height: 17rem;
+
+    }
+
+    /* my skills */
+    .thirdsection .skillsdiv {
+        font-size: medium;
+    }
+
+    /* about pm */
+    .secondsection .right p {
+        font-size: medium;
+    }
+
+    .secondsection .right h1 {
+        font-size: 3rem;
+    }
+
+    /* home */
+    .firstsection .leftsection {
+        font-size: 2rem;
+        width: 38%;
+    }
+    /* contact */
+    .fifthsection .rightsection div {
+        flex-direction: column;
+    }
+    .fifthsection .rightsection .label{
+        padding-left: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .fifthsection .rightsection div a {
+        width: 40%;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .primeContainer {
+        max-width: 768px;
+    }
+
+    /* home */
+    .firstsection .leftsection {
+        width: 38%;
+        font-size: 1.5rem;
+    }
+
+    .firstsection .text_animate {
+        font-size: 2.1rem;
+    }
+
+    .thirdsection .skillsdiv {
+        font-size: medium;
+        flex-wrap: wrap;
+    }
+    .firstsection .resume a{
+        font-size: 1rem;
+    }
+
+    /* about */
+    .secondsection .right p::after {
+        content: '';
+    }
+
+    /* my skills */
+    .thirdsection .skillsdiv {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .thirdsection .skillsdiv div {
+        width: 70%;
+        margin: 1.4rem 0;
+    }
+    .thirdsection h1{
+        font-size: 3.2rem;
+    }
+
+    /* education */
+    .educationsec .eduDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educationsec .eduDiv div {
+        width: 70%;
+        margin: 1.4rem 0;
+    }
+    .educationsec h1{
+        font-size: 3rem;
+    }
+
+    /* work experience */
+    .fourthsection h1{
+        font-size: 3rem;
+    }
+    .exp1 {
+        width: 80%;
+    }
+
+    .project1 {
+        flex-direction: column;
+    }
+
+    .project2 {
+        flex-direction: column-reverse;
+    }
+
+    .navbar .right .ull a {
+        font-size: 1.2rem;
+    }
+
+    .navbar .right .ull li {
+        margin: 0 .5rem;
+    }
+
+    .navbar .logo a {
+        font-size: 1.6rem;
+    }
+    /* contact */
+    .fifthsection .rightsection .label{
+        /* padding-left: 1.5rem; */
+        font-size: 1.2rem;
+    }
+    .fifthsection .rightsection div a {
+        width: 50%;
+        font-size: 2rem;
+        /* padding: 0; */
+    }
+    .fifthsection .rightsection div i{
+        width: 3rem;
+        height: 3rem;
+    }
+    .fifthsection .rightsection h2{
+        font-size: 1.2rem;
+    }
+    .fifthsection h1{
+        font-size: 3rem;
+    }
+    .fifthsection .rightsection p{
+        font-size: .9rem;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .primeContainer {
+        max-width: 640px;
+    }
+    .firstsection .leftsection p{
+        width: 80%;
+    }
+    /* navbar*/
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        margin: 0 1rem;
+    }
+
+    .ull {
+        display: flex;
+        flex-direction: column;
+        background: #03045e;
+        /*2a0a75*/
+    }
+
+    .ull li {
+        width: 90%;
+        font-size: 1.6rem;
+        border-bottom: 1px solid;
+        margin-bottom: .5rem;
+    }
+    /* .ul li a{
+        /* display: block;
+        width: 100%; @/
+        flex: 1;
+    } */
+    .hamburger-menu {
+        display: block;
+        margin: 0 1rem;
+    }
+
+    .navbar .right .ull {
+        position: absolute;
+        top: 3.4rem;
+        left: 3rem;
+        transform: translateX(100%);
+        visibility: hidden;
+        border-bottom-left-radius: 1em;
+        border-top-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        transition: all 0.3s ease-in-out;
+        width: 15rem;
+        padding: 1rem 0;
+        /* border: 1px solid; */
+    }
+
+    .menu-toggle:checked+.ull {
+        visibility: visible;
+        transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* home */
+    .firstsection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstsection .leftsection {
+        width: 70%;
+        font-size: 2.3rem;
+        padding: 1.5rem;
+    }
+
+    .firstsection .text_animate {
+        font-size: 2.5rem;
+    }
+    .firstsection .rightsection{
+        width: 70%;
+    }
+    .firstsection .rightsection img{
+        width: 100%;
+        margin: .5rem auto;
+    }
+    .firstsection .resume a{
+        font-size: 1.3rem;
+    }
+    /* about */
+    .secondsection {
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .secondsection .left img,
+    .secondsection .left .overlay {
+        width: 120%;
+    }
+
+    .secondsection .right {
+        margin-top: 4rem;
+        width: 80%;
+    }
+
+    .secondsection p {
+        font-size: 1.13rem !important;
+    }
+
+    /* skills */
+    .thirdsection .skillsdiv div {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* work experience */
+    .project1 .project-box,.project2 .project-box{
+        width: 86%;
+    }
+    .project1, .project2{
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+    .project2 .project-layer .side{
+        width: 70%;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .primeContainer {
+        max-width: 475px;
+    }
+
+    /* first section */
+    .firstsection .leftsection {
+        width: 70%;
+        font-size: 1.6rem;
+        padding: 1.2rem;
+    }
+
+    .firstsection .text_animate {
+        font-size: 1.9rem;
+    }
+    .text_animate{
+        width: 85%;
+    }
+    .firstsection .resume a{
+        font-size: 1rem;
+    }
+    /* about */
+
+    .secondsection .left img,
+    .secondsection .left .overlay {
+        width: 110%;
+    }
+
+    .secondsection .right {
+        margin-top: 3.5rem;
+        width: 75%;
+    }
+    .secondsection h1{
+        font-size: 2.5rem !important;
+    }
+    .secondsection h2{
+        font-size: larger;
+    }
+    .secondsection p {
+        font-size: 1rem !important;
+    }
+    /* skills */
+    .thirdsection .figures{
+        font-size: 3rem;
+    }
+    .thirdsection h1{
+        font-size:3rem;
+    }
+    .thirdsection .skillsdiv div{
+        width: 80%;
+    }
+    /* work experience */
+    .fourthsection h1{
+        font-size: 2.7rem;
+    }
+    .fourthsection h2{
+        font-size: 1.3rem;
+    }
+    .exp1{
+        font-size: 1rem;
+        width: 75%;
+    }
+    .project1, .project2{
+        width: 110%;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+    .project1 p, .project2 p{
+        font-size: 1rem;
+    }
+    .project1 .project-box,.project2 .project-box{
+        width: 87%;
+    }
+    .project2 .project-layer .side{
+        width: 70%;
+    }
+    /* contact */
+    .fifthsection .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fifthsection img{
+        width: 80%;
+    }
+    .fifthsection .rightsection{
+        width: 80%;
+        margin-bottom: 1.2rem;
+    }
+    .fifthsection .rightsection h2{
+        font-size: 1.2rem;
+    }
+    .fifthsection h1{
+        font-size: 2.5rem;
+    }
+    .fifthsection .rightsection p{
+        margin-top: 1rem;
+    }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .primeContainer {
+        max-width: 100%;
+    }
+    /* contact */
+    .fifthsection .rightsection h2{
+        font-size: 1.2rem;
+    }
+    .fifthsection h1{
+        font-size: 2rem;
+    }
+    .fifthsection .rightsection p{
+        margin-top: 1rem;
+    }
+    .fifthsection .rightsection div a{
+        width: 80%;
+    }
+    /* work experience */
+    .fourthsection h1{
+        font-size: 2rem;
+    }
+    .fourthsection h2{
+        font-size: 1.2rem;
+    }
+
+    .project1, .project2{
+        width: 130%;
+    }
+    .project-box{
+        width: 95% !important;
+    }
+    /* education */
+    .educationsec h1{
+        font-size: 2rem;
+    }
+    .educationsec .eduDiv div{
+        width: 95%;
+    }
+    .educationsec .eduDiv div h2,h3{
+        font-size: 1rem;
+    }
+    /* my skills */
+    .thirdsection h1{
+        font-size: 2rem;
+    }
+    .thirdsection .skillsdiv div{
+        width: 95%;
+    }
+    .thirdsection .skillsdiv div h2{
+        font-size: 1.2rem;
+    }
+    .thirdsection .skillsdiv div p{
+        font-size: .8rem;
+    }
+    .project-layer .side h2{
+        font-size: 1.2rem;
+    }
+    .project-layer .side{
+        width: 50%;
+    }
+    /* about me */
+    .secondsection .right h1{
+        font-size: 2rem !important;
+    }
+    .secondsection .right h2{
+        font-size: 1rem;
+    }
+    .secondsection .right p{
+        font-size: .9rem !important;
+    }
+    /* home */
+    .firstsection .leftsection{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    .firstsection .text_animate{
+        font-size: 1.5rem;
+    }
+    .firstsection .leftsection p{
+        width: 100%;
+    }
+    .firstsection .resume a{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 475px){
+    .primeContainer {
+        max-width: 280px;
+    }
+}
