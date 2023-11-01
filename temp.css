@@ -5,7 +5,9 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
-
+body {
+    overflow-x: hidden;
+}
 /* 2xl */
 @media (max-width: 1536px) {
     .primeContainer {
